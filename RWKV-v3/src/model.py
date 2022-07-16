@@ -10,14 +10,14 @@ import torch.nn as nn
 
 from transformers import PreTrainedTokenizerFast
 
-RUN_DEVICE = 'cpu' # cpu cuda
+RUN_DEVICE = 'cuda' # cpu cuda
 ctx_len = 768
 n_layer = 12
 n_embd = 768
 
 # ---> download RWKV-3 169M model from https://huggingface.co/BlinkDL/rwkv-3-pile-169m/tree/main
 
-MODEL_NAME = '/mnt/ssd-1/BlinkDL_dont_delete/B/TRAIN_100M/out/all-1652'
+MODEL_NAME = 'rwkv_model'
 K_EPS = 1e-8
 
 vocab_size = 50277
